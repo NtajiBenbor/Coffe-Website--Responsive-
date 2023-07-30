@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F0EFEEff;
+}
+
+/* HEARDER SECTION */
+header{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #623F2Eff;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    background-color: #F0EFEEff;
+
+    
+}
+
+.logo {
+    /* width: max(5); */
+    aspect-ratio: 35 /35;
+}
+
+/* NAV BAR */
+.container {
+    display: flex;
+    width: 100%;
+
+    
+}
+
+.container > .flex-item {
+    list-style: none;
+    display: block;
+    
+    border: 1px solid blue;
+    margin: 10px 20px 0 20px;
+}
+
+/* SHOP NAME */
+.title {
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.26em;
+    font-size: 1.5em;
+    height: 30px;
+    padding: 10px;
+    margin-right: auto;
+}
+
+/* HERO SECTION */
+.hero {
+    width: 100%;
+    height: 700px;
+    background: url(/img/pexels-brix-saranza-4621676.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+    object-fit: cover;
+    margin-top: -37px ;
+}
+
+/* hero text */
+h1{
+
+    padding-top: 400px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.8em;
+    color: #623F2Eff;
+    
+
+}
+
+/* SECTION TWO */
+
+/* CARD IMAGE for the item in the first collumn of cards */
+.card-1-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+/* container element for section Two */
+.section2 {
+    width: 90%;
+    height: 8st00px;
+    padding: 20px;
+    margin: 0 auto;
+    
+
+}
+
+/* title text for section two */
+.section2 > .section-title{
+    text-align: center;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.0em;
+    padding-bottom: 50px;
+}
+
+
+.section-2-flex-container-main{
+    display: flex;
+    border: 2px solid seagreen;
+    gap: 10px;
+    height: 100%;
+}
+
+/* container elemet for the horizontally aligned cards this is pane 1*/
+.section-2-flex-container-sec {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gold;
+    width: 50%;
+    /* gap: 5px; */
+    height: 100%;
+}
+
+/* for the first group of cards aligned hozinotally  in pane 1*/
+.card-1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    border: 2px solid maroon;
+    
+}
+
+/* text for the horizontally aligned cards in pane 1 */
+.card-1-text{
+    padding: 10px;
+    width:50%;
+    height: 100%;
+}
+ 
+/* this is pane 2 */
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    border: 4px solid teal;
+
+}
+
+/* styles for the image in pane 2 */
+.card-2-image{
+    width: 100%;
+    height: 50%;
+}
+
+/* styles for the text in pane 2 */
+.card-2-text{
+    width: 100%;
+    height: 50%;
+    border: 1px solid blue;
+    padding: 50px;
+
+}
+
+/* SECTION  THREE*/
+
+.section-3{
+    width: 90%;
+    height: 600px;
+}
+.section-txt{
+    text-align: center;
+}
