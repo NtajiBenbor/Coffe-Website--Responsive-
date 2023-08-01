@@ -7,6 +7,8 @@ body, html {
     width: 100%;
     height: 100vh;
     background-color: #F0EFEEff;
+    font-family: sans-serif;
+    font-size: 1rem;
 }
 
 /* HEARDER SECTION */
@@ -17,6 +19,7 @@ header{
     display: flex;
     justify-content: flex-start;
     position: fixed;
+    align-items: center;
     top: 0;
     background-color: #F0EFEEff;
 
@@ -24,24 +27,52 @@ header{
 }
 
 .logo {
-    /* width: max(5); */
-    aspect-ratio: 35 /35;
+    width: max(50px, 5%);
+    aspect-ratio: 8 / 6;
 }
 
 /* NAV BAR */
-.container {
+.nav-container {
     display: flex;
     width: 100%;
 
     
 }
 
-.container > .flex-item {
+h1, h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header & Footer NAV link behavior */
+.nav-container > .flex-item > a, .footer-links > ul > li > a {
+    text-decoration: none;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+.nav-container > .flex-item > a:hover, .footer-links > ul > li > a:hover {
+    color: #623F2Eff;
+    font-size: 1.2em;
+    transition: 1s;
+   
+}
+
+.nav-container > .flex-item {
     list-style: none;
     display: block;
-    
-    border: 1px solid blue;
+   
     margin: 10px 20px 0 20px;
+}
+
+.nav-container > .flex-item > .visit-btn {
+    padding: 10px;
+    background-color: #000000;
+    color: #F0EFEEff;
+    border: none;
+    border-radius: 3px;
+
 }
 
 /* SHOP NAME */
@@ -51,8 +82,8 @@ header{
     letter-spacing: 0.26em;
     font-size: 1.5em;
     height: 30px;
-    padding: 10px;
     margin-right: auto;
+    color: #623F2Eff;
 }
 
 /* HERO SECTION */
@@ -65,17 +96,40 @@ header{
     background-position: center;
     object-fit: cover;
     margin-top: -37px ;
+   
+}
+
+/* SUBCRIBE button */
+.sub-btn {
+    padding: 20px;
+    background-color: #000000;
+    color: #F0EFEEff;
+    border: none;
+    border-radius: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 0.3em;
+    cursor: pointer;
+}
+
+.sub-btn:hover {
+    color: #351f13;
+    border: #000000;
+    background-color: #F0EFEEff;
+    border: 4px solid #351f13;
+    transition: 1s;
 }
 
 /* hero text */
-h1{
+.hero > div{
 
-    padding-top: 400px;
+    padding-top: 430px;
     font-weight: 800;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.8em;
-    color: #623F2Eff;
-    
+    font-size: 3em;
+    color: #000000;
+    padding-left: 30px;
+    line-height: 1.4em;
 
 }
 
@@ -83,7 +137,7 @@ h1{
 
 /* CARD IMAGE for the item in the first collumn of cards */
 .card-1-image {
-    width: 50%;
+    width: 40%;
     height: 100%;
     object-fit: cover;
    
@@ -94,7 +148,7 @@ h1{
     width: 90%;
     height: 800px;
     padding: 20px;
-    margin: 0 auto;
+    margin: auto auto;
     
 
 }
@@ -112,7 +166,6 @@ h1{
 
 .section-2-flex-container-main{
     display: flex;
-    border: 2px solid seagreen;
     gap: 10px;
     height: 100%;
 }
@@ -121,9 +174,8 @@ h1{
 .section-2-flex-container-sec {
     display: flex;
     flex-direction: column;
-    border: 1px solid gold;
     width: 50%;
-    /* gap: 5px; */
+    gap: 14px;
     height: 100%;
 }
 
@@ -132,17 +184,19 @@ h1{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 50%;
+    height: 49%;
     padding: 0;
-    border: 2px solid maroon;
+    border: 3px solid #623F2Eff;
     
 }
 
 /* text for the horizontally aligned cards in pane 1 */
 .card-1-text{
-    padding: 10px;
-    width:50%;
-    height: 100%;
+    padding: 20px;
+    width:60%;
+    /* height: 100%; */
+    align-self: center;
+  
 }
  
 /* this is pane 2 */
@@ -151,7 +205,7 @@ h1{
     flex-direction: column;
     width: 50%;
     height: 100%;
-    border: 4px solid teal;
+    border: 3px solid #623F2Eff;
 
 }
 
@@ -165,37 +219,159 @@ h1{
 .card-2-text{
     width: 100%;
     height: 50%;
-    border: 1px solid blue;
-    padding: 50px;
+    padding: 100px 50px 10px 50px;
+    
 
 }
 
 /* SECTION  THREE*/
 
-.section-3{
-    margin-top: 250px;
+.section-3 {
+    margin-top: 500px;
     padding-top: 100px;
     width: 80%;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
 }
-.section-txt{
+.section-txt {
     text-align: center;
     padding: 20px 0;
 }
 
-.image-reel-container{
+.image-reel-container {
     display: flex;
     width: 90%;
     height: 500px;
-    border: 5px solid green;
     margin: 0 auto;
 }
 
-.reel-img{
-    width: 40%;
+.reel-img-1{
+    width: 49%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: auto;
+    border: 4px solid #623F2Eff;
+    
+}
+
+.reel-img-2{
+    width: 49%;
     height: 100%;
     object-fit: cover;
     margin-left: auto;
+    border: 4px solid #623F2Eff;
+    
+}
+
+
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #f7e0e0;
+    width: 100%;
+    margin-top: 500px;
+}
+
+
+.footer-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* margin: 0 auto; */
+}
+
+/* Footer Email styles*/
+
+
+.email-container {
+    align-self: center;
+}
+
+input[type="email"] {
+    height: 50px;
+    width: 300px;
+    border: 3px solid #470606;
+    background-color: #F0EFEEff;
+    padding-left: 10px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline:none;
+    margin-right: 5px;
+}
+
+
+input[type="email"] + button {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    color: #F0EFEEff;
+    background-color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* cafe name in the footer section */
+
+.footer-hub {
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.26em;
+    font-size: 1.5em;
+    height: 30px;
+    color: #623F2Eff;
+}
+
+
+
+/* Footer links */
+
+.footer-links > ul  > .link-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #470606;
+    padding: 10px 10px 50px 10px;
+    
+}
+
+.footer-links > ul > li {
+    list-style: none;
+    padding-bottom: 20px;
+    
+}
+
+/* social media links */
+
+/* .footer-links > ul > li > .footer-icons, .footer-links > li >img + p  {
+    display: inline-block;
+} */
+
+.footer-icons {
+    width: max(20px, 5%);
+    margin-right: 10px;
+}
+
+
+/* BELOW THE HORIZONTAL RULE */
+
+.t-o-s {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.t-o-s > div { 
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.t-o-s .copy-right {
+    margin-right: auto;
+}
+
+hr{
+    border: 2px solid #623F2Eff;
 }
