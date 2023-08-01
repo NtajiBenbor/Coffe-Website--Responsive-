@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F0EFEEff;
+    font-family: sans-serif;
+    /* font-size: 0.8rem; */
+    background-color: #fdf0d5;
+}
+
+/* HEARDER SECTION */
+header{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #623F2Eff;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    background-color: #F0EFEEff;
+    
+
+    
+}
+
+.logo {
+    width: max(50px, 5%);
+    aspect-ratio: 12 / 6;
+    object-fit: contain;
+}
+
+/* NAV BAR */
+.nav-container {
+    display: flex;
+    width: 100%;
+
+    
+}
+
+h1, h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header & Footer NAV link behavior */
+.nav-container > .flex-item > a, .footer-links > ul > li > a {
+    text-decoration: none;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+.nav-container > .flex-item > a:hover, .footer-links > ul > li > a:hover {
+    color: #623F2Eff;
+    font-size: 1.2em;
+    transition: 1s;
+   
+}
+
+.nav-container > .flex-item {
+    list-style: none;
+    display: block;
+   
+    margin: 10px 20px 0 20px;
+}
+
+.nav-container > .flex-item > .visit-btn {
+    padding: 10px;
+    background-color: #000000;
+    color: #F0EFEEff;
+    border: none;
+    border-radius: 3px;
+
+}
+/* SHOP NAME */
+.title {
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.26em;
+    font-size: 1.5em;
+    height: 30px;
+    margin-right: auto;
+    color: #623F2Eff;
+}
+
+
+.flex-container-1 {
+    margin: 200px auto 0 auto;
+    width: 80%;
+    display: flex;
+
+    height: 600px;
+
+}
+
+.flex-items-1 {
+    width: 50%;
+    padding: 0 20px;
+    align-self: center;
+    line-height: 1.5em;
+    
+}
+
+.flex-items-2 {
+    width: 50%;
+
+    height: 100%;
+
+}
+
+.flex-container-1-img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+
+/* OUR TEAM SECTION */
+
+.our-team-section {
+    width: 95%;
+    margin: 250px auto 0 auto;
+}
+
+.section-title {
+    margin-left: 100px;
+    padding-bottom: 50px;
+}
+
+.our-team-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.barista-card {
+    width: 25%;
+    padding: 20px;
+    
+}
+
+.barista-card-img {
+    max-width: 25%;
+    object-fit: cover;
+    border-radius: 50%;
+    aspect-ratio: 35 / 40;
+    
+}
+
+.socials, .star {
+    width: max(20px, 5%);
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+
+/* CUSTOMER TESTIMONIALS */
+
+.testimonial {
+    width: 50%;
+    margin: 200px auto 0 auto;
+    text-align: center;
+}
