@@ -128,6 +128,7 @@ h1, h2, h3 {
     width:100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
     
     
 }
@@ -156,9 +157,7 @@ h1, h2, h3 {
 .barista-card {
     width: 20%;
     padding: 20px;
-    border: 2px solid #470606ff;
     border-radius: 10px;
-   
     min-width: 350px;
     margin-top: 15px;
     
@@ -167,7 +166,8 @@ h1, h2, h3 {
 .barista-card:hover {
     box-shadow: -10px 10px 5px 5px rgba(0, 0, 0, 0.3);
     transition: 0.5s;
-    background: linear-gradient(225deg, hsla(30, 6%, 94%, 1) 30%, hsla(0, 59%, 92%, 1) 99%);
+    background: linear-gradient(225deg,hsla(0, 59%, 92%, 1)  30%, hsla(30, 6%, 94%, 1) 99%);
+    
 }
 
 .barista-card-img {
@@ -175,6 +175,7 @@ h1, h2, h3 {
     object-fit: cover;
     border-radius: 50%;
     aspect-ratio: 35 / 40;
+    border: 3px solid rgba(0, 0, 0, 0.5);
     
 }
 
@@ -272,6 +273,8 @@ h1, h2, h3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
 
