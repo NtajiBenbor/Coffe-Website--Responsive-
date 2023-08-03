@@ -8,8 +8,9 @@ body, html {
     height: 100vh;
     background-color: #F0EFEEff;
     font-family: sans-serif;
-    /* font-size: 0.8rem; */
+    font-size: 1em;
     background-color: #fdf0d5;
+    min-width: 882px;
 }
 
 /* HEARDER SECTION */
@@ -53,12 +54,13 @@ h1, h2, h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     color: #000000;
+    font-size: max( 0.9em, 5%);
 }
 
 .nav-container > .flex-item > a:hover, .footer-links > ul > li > a:hover {
     color: #623F2Eff;
     font-size: 1.2em;
-    transition: 1s;
+    transition: 0.8s;
    
 }
 
@@ -75,6 +77,7 @@ h1, h2, h3 {
     color: #F0EFEEff;
     border: none;
     border-radius: 3px;
+    min-width: min(50px, 3%);
 
 }
 /* SHOP NAME */
@@ -82,11 +85,21 @@ h1, h2, h3 {
     font-weight: 800;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.26em;
-    font-size: 1.5em;
+    font-size: max(1.5em, 3%);
     height: 30px;
     margin-right: auto;
     color: #623F2Eff;
+   
 }
+
+/* our cafe */
+
+.hub{
+    color: #623F2Eff;
+    letter-spacing: 0.26em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+} 
 
 
 .flex-container-1 {
@@ -134,27 +147,44 @@ h1, h2, h3 {
 }
 
 .our-team-flex {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .barista-card {
-    width: 25%;
+    width: 20%;
     padding: 20px;
+    border: 2px solid #470606ff;
+    border-radius: 15px;
+    background: linear-gradient(180deg,#F0EFEEff 50%, #f7e0e0);
+    min-width: 350px;
+    margin-top: 15px;
     
 }
 
+.barista-card:hover {
+    box-shadow: -10px 10px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
 .barista-card-img {
-    max-width: 25%;
+    max-width: 30%;
     object-fit: cover;
     border-radius: 50%;
     aspect-ratio: 35 / 40;
     
 }
 
-.socials, .star {
+.barista-card > h3 {
+    font-size: 0.9rem;
+}
+
+
+.socials {
     width: max(20px, 5%);
     margin-right: 10px;
     object-fit: contain;
@@ -165,6 +195,209 @@ h1, h2, h3 {
 
 .testimonial {
     width: 50%;
-    margin: 200px auto 0 auto;
+    margin: 250px auto 0 auto;
     text-align: center;
+    font-weight: 600;
+}
+
+.star {
+    width: max(15px, 5%);
+    margin-right: 10px;
+    object-fit: contain; 
+    aspect-ratio: 15 / 7;  
+    margin: 0;
+    padding: 0;
+}
+
+.review {
+    display:flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    height: 60px;
+    
+    
+}
+
+.review-author{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-right: 10px;
+
+}
+
+.author-org{
+    border-left: 4px solid #623F2Eff;
+    color: #7c7c7c;
+    font-weight: 700;
+    margin-left: 5px;
+    padding-left: 20px;
+    padding-top: 15px;
+    height: 100%;
+}
+
+
+/* LOCATION SECTION */
+
+.location {
+    width: 80%;
+    margin: 300px auto 0 auto;
+  
+
+}
+
+.location-flex-container {
+    width: 100%;
+    display: flex;
+    height: 600px;
+   
+}
+
+.location-txt-pane{
+    width: 50%;
+    height: 100%;
+    background: #F0EFEEff;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+.location-img-pane{
+    width: 50%;
+    height: 100%;
+}
+
+
+.location-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.city {
+    padding-bottom: 5px;
+    height: 20%;
+    padding-left: 20px;
+   
+}
+
+.ph {
+    border-left: 5px solid #623F2Eff;
+    height: 100%;
+    padding-left: 20px;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #f7e0e0;
+    width: 100%;
+    margin-top: 300px;
+}
+
+
+.footer-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* margin: 0 auto; */
+}
+
+/* Footer Email styles*/
+
+
+.email-container {
+    align-self: center;
+}
+
+input[type="email"] {
+    height: 50px;
+    width: 300px;
+    border: 3px solid #470606;
+    background-color: #F0EFEEff;
+    padding-left: 10px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline:none;
+    margin-right: 5px;
+}
+
+
+input[type="email"] + button {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    color: #F0EFEEff;
+    background-color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* cafe name in the footer section */
+
+.footer-hub {
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.26em;
+    font-size: 1.5em;
+    height: 30px;
+    color: #623F2Eff;
+}
+
+
+
+/* Footer links */
+
+.footer-links > ul  > .link-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #470606;
+    padding: 10px 10px 50px 10px;
+    
+}
+
+.footer-links > ul > li {
+    list-style: none;
+    padding-bottom: 50px;
+    
+}
+
+/* social media links */
+
+/* .footer-links > ul > li > .footer-icons, .footer-links > li >img + p  {
+    display: inline-block;
+} */
+
+.footer-icons {
+    width: max(20px, 5%);
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+
+/* BELOW THE HORIZONTAL RULE */
+
+.t-o-s {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.t-o-s > div { 
+    padding: 5px;
+    margin: 0 10px;
+    font-size: 0.8em;
+}
+
+.t-o-s .copy-right {
+    margin-right: auto;
+}
+
+hr{
+    border: 1px solid #623F2Eff;
 }
