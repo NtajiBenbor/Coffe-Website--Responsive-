@@ -9,7 +9,7 @@ body, html {
     font-family: sans-serif;
     font-size: 1em;
     background-color: #f5f5f5;
-    min-width: 882px;
+    /* min-width: 882px; */
 }
 
 /* HEARDER SECTION */
@@ -47,7 +47,7 @@ h1, h2, h3 {
 }
 
 /* Header & Footer NAV link behavior */
-.nav-container > .flex-item > a, .footer-links > ul > li > a {
+.nav-container > .flex-item > a, .footer-links > ul > li > a{
     text-decoration: none;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -56,10 +56,23 @@ h1, h2, h3 {
     font-size: max( 0.9em, 5%);
 }
 
-.nav-container > .flex-item > a:hover {
-    color: #623F2Eff;
-    font-size: 1.2em;
+#blog {
+    color: #F0EFEEff;
+    
+}
+
+#blog:hover {
+    color: rgb(243, 81, 0);
     transition: 1s;
+    font-size: 1.1em;
+
+}
+
+.nav-container > .flex-item > a:hover {
+    color: rgb(243, 81, 0);
+    transition: 1s;
+   
+   
    
 }
 
@@ -70,8 +83,8 @@ h1, h2, h3 {
     margin: 10px 20px 0 20px;
 }
 
-.nav-container > .flex-item > .visit-btn {
-    padding: 10px;
+.nav-container > .visit-btn {
+    padding: 5px;
     background-color: #000000;
     color: #F0EFEEff;
     border: none;
@@ -84,7 +97,7 @@ h1, h2, h3 {
     font-weight: 800;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.26em;
-    font-size: max(1.5em, 3%);
+    font-size: min(1.5rem, 18px);
     height: 30px;
     margin-right: auto;
     color: #623F2Eff;
@@ -316,6 +329,7 @@ footer {
 
 .email-container {
     align-self: center;
+    padding-left: 15px;
 }
 
 input[type="email"] {
